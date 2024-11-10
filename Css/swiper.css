@@ -1,0 +1,56 @@
+.swiper-container {
+    width: 100%;             /* Chiều rộng của container */
+    overflow: hidden;        /* Đảm bảo chỉ hiển thị slide bên trong container */
+}
+
+.swiper-container1 {
+    width: 100%;             /* Chiều rộng của container1 */
+    overflow: hidden;        /* Đảm bảo chỉ hiển thị slide bên trong container1 */
+}
+  
+.swiper-wrapper {
+    display: flex;           /* Đảm bảo các slide được xếp hàng ngang */
+    transition: transform 0.5s ease-in-out; /* Tạo hiệu ứng khi chuyển slide */
+}
+  
+.swiper-slide {
+    flex-shrink: 0;          /* Đảm bảo các slide có kích thước cố định */
+    width: calc(100% / 5);   /* Hiển thị 5 slide cùng lúc, điều chỉnh nếu cần */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+  
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.button-swiper-next{
+    position: absolute;
+    top: -40px;
+    right: 0;
+    width: 36px;
+    height: 42px;
+    border: none;
+    border-radius: 8px;
+    transform: translateY(0);
+    color: #fff;
+    background-color: #222028;
+    z-index: 1;
+}
+
+.button-swiper-prev{
+    position: absolute;
+    top: -40px;
+    right: 50px;
+    width: 36px;
+    height: 42px;
+    border: none;
+    border-radius: 8px;
+    transform: translateY(0);
+    color: #fff;
+    background-color: #222028;
+    z-index: 1;
+}
